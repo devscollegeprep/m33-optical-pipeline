@@ -1,6 +1,6 @@
 # Ignore local raw telescope data matrices
 data/raw/*
-!date/raw/.gitkeep
+!data/raw/.gitkeep
 
 #Ignore processed master output data matrices
 data/processed/*
