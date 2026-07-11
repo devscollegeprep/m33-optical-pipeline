@@ -1,0 +1,11 @@
+# Ignore local raw telescope data matrices
+data/raw/*
+!date/raw/.gitkeep
+
+#Ignore processed master output data matrices
+data/processed/*
+!data/processed/.gitkeep
+
+# Ignore operating system background memory artifacts
+.DS_Store
+.ipynb_checkpoints/
