@@ -12,7 +12,7 @@ This is an automated astronomical image processing and data analysis pipeline op
   
 - **Aperture Photometry: Calculate precise photon flux-per-pixel values relative to the core for key star formation regions in the Triangulum galaxy, specificallly targeting NGC-604
 
-### repository architecture
+## repository architecture
 ```text
 |--data/
 |   |--raw/              # ignored - local raw telescope .fits data frames
@@ -23,7 +23,8 @@ This is an automated astronomical image processing and data analysis pipeline op
 |__README.md             # structural blueprint and research logs
 ```
 
-#### 7-Week Development Roadmap (due to limited access to information regarding hyperspecific learning requirements, a specialized AI tutor was used to complete a 7 week curriculum to effectively learn line-by-line what the python code typed was doing (during the creation of this repository, I am completely new to Python))
+## 7-Week Development Roadmap 
+- (due to limited access to information regarding hyperspecific learning requirements, a specialized AI tutor was used to complete a 7 week curriculum to effectively learn line-by-line what the python code typed was doing (during the creation of this repository, I am completely new to Python))
 
 Week 1: Environmental Architecture & Git Integration
 * Configured localized mac hardware to run on Python 3.13.14
@@ -56,6 +57,10 @@ Week 7: Non-Linear Asinh stretching & nebular Extraction
 * Instead of deploying standard linear logarithmic stretching, 'astropy.visualization.AsinhStretch' and 'ImageNormalize' will be used to enhance faint arms while not blowing out m33's core
 * Use 'Photoutils' to isolate precise pixel coordinates and apply an exact photon flux value to star forming regions
 
-#####Ending Product: A publication-quality, non-linearly stretched scientific image plotting of the Triangulum Galaxy pinned to the repository landing page
+## Deliverable Target
+> **Ending Product: A publication-quality, non-linearly stretched scientific image plotting of the Triangulum Galaxy pinned to the repository landing page
 
-**Core Academic Framework & Tech Libraries: Python 3.13.14 | AstroPy, NumPy, AstroAlign, Photoutils, MatPlotLib
+## **Core Academic Framework & Tech Libraries: 
+- Language & Runtime: Python 3.13.14
+- Astrophysics Engines: AstroPy (`AsinhStretch`, `ImageNormalize`) | Astroalign | Photoutils |
+- Computational Core: | NumPy | Matplotlib |
