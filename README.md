@@ -3,10 +3,10 @@
 This is an automated astronomical image processing and data analysis pipeline optimized to calibrate, register, stack, align, normalize, and identify star formation regions relative to the core in the Triangulum Galaxy (Messier 33
 
 ## scientific objectives
-***Sensor Noise Mitigation: isolate weak galactic signals by mathematically subtracting planes containing dark current disturbances and flat-field optical disturbances from viable images of the galaxy
-***Geometric Registration: correct subtle spatial field drift by caused by atmospheric refraction and galactic drift by realigning images with similar micro-errors over long exposure imaging
-***Signal-To-Noise Ratio (SNR) Optimization: Co-add and mediate raw multi-gigabyte .fits image data sets to create a viable, data-extractable image with supressed stellar background noise
-***Aperture Photometry: Calculate precise photon flux-per-pixel values relative to the core for key star formation regions in the Triangulum galaxy, specificallly targeting NGC-604
+*Sensor Noise Mitigation: isolate weak galactic signals by mathematically subtracting planes containing dark current disturbances and flat-field optical disturbances from viable images of the galaxy
+*Geometric Registration: correct subtle spatial field drift by caused by atmospheric refraction and galactic drift by realigning images with similar micro-errors over long exposure imaging
+*Signal-To-Noise Ratio (SNR) Optimization: Co-add and mediate raw multi-gigabyte .fits image data sets to create a viable, data-extractable image with supressed stellar background noise
+*Aperture Photometry: Calculate precise photon flux-per-pixel values relative to the core for key star formation regions in the Triangulum galaxy, specificallly targeting NGC-604
 
 ### repository architecture
 ```text
