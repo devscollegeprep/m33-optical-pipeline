@@ -10,13 +10,13 @@ This is an automated astronomical image processing and data analysis pipeline op
 
 ### repository architecture
 '''text
----data/
-   ---raw/              # ignored - local raw telescope .fits data frames
-   ---processed/        # ignored - calibrated master output .fits data matrice
----notebooks/
-   ---foundations.ipynb # active - weekly python scripts & notebooks
---- .gitignore          # tracking shield for large local memory/data files
---- README.md           # structural blueprint and research logs
+|--data/
+|   |--raw/              # ignored - local raw telescope .fits data frames
+|   |__processed/        # ignored - calibrated master output .fits data matrice
+|--notebooks/
+|   |__foundations.ipynb # active - weekly python scripts & notebooks
+|--.gitignore            # tracking shield for large local memory/data files
+|__README.md             # structural blueprint and research logs
 '''
 
 #### 7-Week Development Roadmap (due to limited access to information regarding hyperspecific learning requirements, a specialized AI tutor was used to complete a 7 week curriculum to effectively learn line-by-line what the python code typed was doing (during the creation of this repository, I am completely new to Python))
