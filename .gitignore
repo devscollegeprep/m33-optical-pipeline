@@ -2,6 +2,11 @@
 data/raw/*
 !data/raw/.gitkeep
 
+# Ignore general FITS extensions
+*.fits
+*.fit
+*.fts
+
 #Ignore processed master output data matrices
 data/processed/*
 !data/processed/.gitkeep
