@@ -15,14 +15,14 @@ This is an automated astronomical image processing and data analysis pipeline op
 ## repository architecture
 ```text
 |--data/
-|   |--raw/              # ignored - local raw telescope .fits data frames
-|   |__processed/        # ignored - calibrated master output .fits data matrice
+|   |--raw/                    # ignored - local raw telescope .fits data frames
+|   |__processed/              # ignored - calibrated master output .fits data matrice
 |--notebooks/
-|   |__foundations.ipynb # active - weekly python notebooks showing learning progress
+|   |__week2_foundations.ipynb # active - weekly python notebooks showing learning progress
 |--scripts/
-|   |__pipeline.py.      # active - master python automated pipeline
-|--.gitignore            # tracking shield for large local memory/data files
-|__README.md             # structural blueprint and research logs
+|   |__pipeline.py.            # active - master python automated pipeline
+|--.gitignore                  # tracking shield for large local memory/data files
+|__README.md                   # structural blueprint and research logs
 ```
 
 ## 7-Week Development Roadmap 
