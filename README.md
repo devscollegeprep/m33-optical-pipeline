@@ -19,6 +19,7 @@ This is an automated astronomical image processing and data analysis pipeline op
 |   |__processed/              # ignored - calibrated master output .fits data matrice
 |--notebooks/
 |   |__week2_foundations.ipynb # active - weekly python notebooks showing learning progress
+|   |__week3_metadata.ipynb    # active - beginning of pipeline, structuring folder directories
 |--scripts/
 |   |__pipeline.py.            # active - master python automated pipeline
 |--.gitignore                  # tracking shield for large local memory/data files
