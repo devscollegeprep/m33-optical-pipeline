@@ -2,11 +2,8 @@ import os
 from astropy.io import fits
 
 def run_metadata_sweep(target_directory):
-    """
-    Scans a variable data folder path, builds absolute system address matrices, 
-    and checks FITS metadata header badges to catalog imaging file configurations.
-    """
-    print(f"🚀 Initializing automated metadata scan on target: {target_directory}")
+
+    print(f"initializing automated metadata scan on target: {target_directory}")
     
 
     if not os.path.exists(target_directory):
@@ -23,7 +20,7 @@ def run_metadata_sweep(target_directory):
         full_path = os.path.join(target_directory, file_name)
         full_paths.append(full_path)
         
-    print(f"absolute address path assembly complete. Bounded vector size: {len(full_paths)} files.")
+    print(f"absolute address path assembly complete - bounded vector size: {len(full_paths)} files.")
     
 
     for path in full_paths:
