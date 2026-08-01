@@ -4,7 +4,7 @@ This is an automated astronomical image processing and data analysis pipeline op
 
 ## scientific objectives
 
-- **Sensor Noise Mitigation: isolate weak galactic signals by mathematically subtracting planes containing dark current disturbances and flat-field optical disturbances from viable images of the galaxy
+- **Sensor Noise Mitigation: isolate weak galactic signals by mathematically subtracting planes containing dark current disturbances, flat-field optical disturbances, and bias-clearing electronic noise from viable images of the galaxy
   
 - **Geometric Registration: correct subtle spatial field drift by caused by atmospheric refraction and galactic drift by realigning images with similar micro-errors over long exposure imaging
   
@@ -41,25 +41,26 @@ Week 2: Python Basics & Foundational Engineering
 
 Week 3: FITS Architecture & Metadata Extraction
 * Begin using astrophysics-specific libraries
-* Utilize astropy.io.fits to unpack multi-extension space data cards and parse code coordinate systems aswell as metadata matrices
+* Utilize `astropy.io.fits` to unpack multi-extension space data cards and parse code coordinate systems aswell as metadata matrices
+* Map all folder pathing for downstream data routing using `os`
 
 Week 4: Sensor Calibration (Dark and Flat Frame Processing)
 * Begin to access multidimensional computational physics
-* Utilize NumPy array operations to systemically subtract dark and flat disturbance frames from light viable data image
+* Utilize NumPy array operations to systemically subtract dark, flat and bias disturbance frames from light viable data image
 * flattening across digital imaging sensor pixel grids
 
 Week 5: Coordinate Registration (Star Pattern Matching)
 * Employ coordinate transformation matrices
-* Implement astroalign to compute micropixel rotation, translation, and alignment to eliminate vectors and drift smears across long imaging sessins
+* Implement `astroalign` to compute micropixel rotation, translation, and alignment to eliminate vectors and drift smears across long imaging sessins
 
 Week 6: Matrix Stacking (Signal-to-Noise Optimization)
 * Heavy statistical data reduction
-* Executing high-volume median array stacking using system memory optimization (memmap=True) to maximize signal-to-noise ratios
+* Executing high-volume median array stacking using system memory optimization `(memmap=True)` to maximize signal-to-noise ratios
 
 Week 7: Non-Linear Asinh stretching & nebular Extraction 
 * Enhancing faint light signals without oversaturating the core, and assigning mathematical photon values to extract exact photon flux matrices of star formation regions (especially NGC-604)
-* Instead of deploying standard linear logarithmic stretching, 'astropy.visualization.AsinhStretch' and 'ImageNormalize' will be used to enhance faint arms while not blowing out m33's core
-* Use 'Photoutils' to isolate precise pixel coordinates and apply an exact photon flux value to star forming regions
+* Instead of deploying standard linear logarithmic stretching, `astropy.visualization.AsinhStretch` and `ImageNormalize` will be used to enhance faint arms while not blowing out m33's core
+* Use `Photoutils` to isolate precise pixel coordinates and apply an exact photon flux value to star forming regions
 
 ## Deliverable Target
 > **Ending Product: A publication-quality, non-linearly stretched scientific image plotting of the Triangulum Galaxy pinned to the repository landing page
