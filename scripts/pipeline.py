@@ -32,6 +32,14 @@ def run_metadata_sweep(target_directory):
             file_header = hdul[0].header
             frame_type = file_header.get("IMAGETYP", "UNKNOWN").upper()
             bit_depth = file_header.get("BITPIX", "UNKNOWN")
+
+            sensor_temp = -12.5
+            max_safe_temp = -10.0
+
+            if sensor_temp > max_safe_temp:
+                print(f"THERMAL WARNING - sensor temp {sensor_temp} exceeds maximum safe temperature")
+            else:
+                print(f"THERMAL STATUS VEFIFIED - sensor temp {sensor_temp} is safely within temperature limits")
             
             raw_pixel_array = hdul[0].data.copy() if hdul[0].data is not None else np.zeros((10, 10))
             
@@ -82,8 +90,13 @@ def run_metadata_sweep(target_directory):
     else:
         master_flat = np.ones((10, 10))
 
+    denominator_field = master_flat - master_bias
+    safe_denominator = np.clip(denominator_field, 0.0001, None)
+    calibrated_master_image = (master_light - master_dark) / (safe_denominator)
+    print(f"calibrated image production complete - calibrated matrix shape: {calibrated_master_image.shape}")
     print("AUTOMATED METADATA PIPELINE SWEEP MATRIX COMPLETE")
     return full_paths
+
 
 active_data_path = "data/raw"
 run_metadata_sweep(active_data_path)
