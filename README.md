@@ -53,7 +53,7 @@ Week 4: Sensor Calibration (Dark and Flat Frame Processing)
 
 PHASE 5: Coordinate Registration (Star Pattern Matching)
 * Employ coordinate transformation matrices
-* Implement `astroalign` to compute micropixel rotation, translation, and alignment to eliminate vectors and drift smears across long imaging sessins
+* Implement `astroalign` to compute micropixel rotation, translation, and alignment to eliminate vectors and drift smears across long imaging sessions
 
 PHASE 6: Matrix Stacking (Signal-to-Noise Optimization)
 * Heavy statistical data reduction
