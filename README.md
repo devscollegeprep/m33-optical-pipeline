@@ -21,14 +21,16 @@ This is an automated astronomical image processing and data analysis pipeline op
 |   |__week2_foundations.ipynb.      # active - weekly python notebooks showing learning progress
 |   |__week3_metadata.ipynb          # active - beginning of pipeline, structuring folder directories
 |   |__week4_sensorcalibration.ipynb # active - calibrating sensor temperature to mitigate noise
+|.  |__phase5_alignment.ipynb.       # active - aligning fits files with centroid and photon flux values to account for rotation and drift
 |--scripts/
 |   |__pipeline.py.                  # active - master python automated pipeline
 |--.gitignore                        # tracking shield for large local memory/data files
 |__README.md                         # structural blueprint and research logs
 ```
 
-## 7-Week Development Roadmap 
+## 7-Phase Development Roadmap 
 - (due to limited access to information regarding hyperspecific learning requirements, a specialized AI tutor was used to complete a 7 week curriculum to effectively learn line-by-line what the python code typed was doing (during the creation of this repository, I am completely new to Python))
+- also, the pipeline had to be switched to a 7-phase developmental roadmap beginning at week 5; due to school, football, and work time constraints, a rigid week schedule could not be feasibly obtained
 
 Week 1: Environmental Architecture & Git Integration
 * Configured localized mac hardware to run on Python 3.13.14
@@ -49,15 +51,15 @@ Week 4: Sensor Calibration (Dark and Flat Frame Processing)
 * Utilize NumPy array operations to systemically subtract dark, flat and bias disturbance frames from light viable data image
 * flattening across digital imaging sensor pixel grids
 
-Week 5: Coordinate Registration (Star Pattern Matching)
+PHASE 5: Coordinate Registration (Star Pattern Matching)
 * Employ coordinate transformation matrices
 * Implement `astroalign` to compute micropixel rotation, translation, and alignment to eliminate vectors and drift smears across long imaging sessins
 
-Week 6: Matrix Stacking (Signal-to-Noise Optimization)
+PHASE 6: Matrix Stacking (Signal-to-Noise Optimization)
 * Heavy statistical data reduction
 * Executing high-volume median array stacking using system memory optimization `(memmap=True)` to maximize signal-to-noise ratios
 
-Week 7: Non-Linear Asinh stretching & nebular Extraction 
+PHASE 7: Non-Linear Asinh stretching & nebular Extraction 
 * Enhancing faint light signals without oversaturating the core, and assigning mathematical photon values to extract exact photon flux matrices of star formation regions (especially NGC-604)
 * Instead of deploying standard linear logarithmic stretching, `astropy.visualization.AsinhStretch` and `ImageNormalize` will be used to enhance faint arms while not blowing out m33's core
 * Use `Photoutils` to isolate precise pixel coordinates and apply an exact photon flux value to star forming regions
