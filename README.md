@@ -34,7 +34,7 @@ This is an automated astronomical image processing and data analysis pipeline op
 
 Week 1: Environmental Architecture & Git Integration
 * Configured localized mac hardware to run on Python 3.13.14
-* Established workspace using secure cryptographic Ed25519 cloud handshakes
+* Established workspace using secure cryptographic Ed25519 cloud gates
 * Deployed 'gitignore' protection rules to preserve folder architecture and repository integrity
 
 Week 2: Python Basics & Foundational Engineering
